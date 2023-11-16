@@ -8,12 +8,13 @@
     <!-- bootstrap styles -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
     <!-- header start  -->
     <header>
-        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
             <div class="container">
                 <a class="navbar-brand" href="#"><img src="images/logo.png" alt=" "></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
@@ -27,13 +28,13 @@
                             <a class="nav-link active" aria-current="page" href="#">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Shoes</a>
+                            <a class="nav-link" href="#Shoes">Shoes</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Backpack</a>
+                            <a class="nav-link" href="#Backpack">Backpack</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Subscribe</a>
+                            <a class="nav-link" href="#Subscribe">Subscribe</a>
                         </li>
 
 
@@ -45,7 +46,7 @@
             <div id="carouselExample" class="carousel slide">
                 <div class="carousel-inner rounded">
                     <div class="carousel-item active">
-                        <div class="row p-5 bg-info d-flex align-items-center ">
+                        <div class="row p-5 bg-color-change d-flex align-items-center ">
                             <div class="col-lg-7">
                                 <h1>Cool Dude Headphone </h1>
                                 <p>This is the best headphone in the world for people who just want to waste in front of
@@ -62,7 +63,7 @@
 
                     </div>
                     <div class="carousel-item active">
-                        <div class="row p-5 bg-info d-flex align-items-center ">
+                        <div class="row p-5 bg-color-change d-flex align-items-center ">
                             <div class="col-lg-7">
                                 <h1>Cool Dude Headphone </h1>
                                 <p>This is the best headphone in the world for people who just want to waste in front of
@@ -79,7 +80,7 @@
 
                     </div>
                     <div class="carousel-item active">
-                        <div class="row p-5 bg-info d-flex align-items-center ">
+                        <div class="row p-5 bg-color-change d-flex align-items-center ">
                             <div class="col-lg-7">
                                 <h1>Cool Dude Headphone </h1>
                                 <p>This is the best headphone in the world for people who just want to waste in front of
@@ -113,29 +114,29 @@
         </section>
     </header>
     <main>
-        <section class="container">
+        <section class="container catagories">
             <div class="row gx-5 ">
                 <div class="col-lg-4">
                     <div class="p-3 d-flex align-items-center justify-content-between bg-warning rounded-4">
                         <h1 class="text-white">Watch</h1>
-                        <img class="w-50" src="images/categories/watch.png" alt="">
+                        <img src="images/categories/watch.png" alt="">
                     </div>
                 </div>
                 <div class="col-lg-4">
                     <div class="p-3 d-flex align-items-center justify-content-between bg-primary rounded-4">
                         <h1 class="text-white">Bag</h1>
-                        <img class="w-50" src="images/categories/bag.png" alt="">
+                        <img src="images/categories/bag.png" alt="">
                     </div>
                 </div>
                 <div class="col-lg-4">
                     <div class="p-3 d-flex align-items-center justify-content-between bg-success rounded-4">
                         <h1 class="text-white">Shoe</h1>
-                        <img class="w-50" src="images/categories/shoes.png" alt="">
+                        <img src="images/categories/shoes.png" alt="">
                     </div>
                 </div>
             </div>
         </section>
-        <section class="container my-5">
+        <section class="container my-5 " id="Shoes">
             <h2>Shoes</h2>
             <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
                 <div class="col">
@@ -183,12 +184,12 @@
                 </div>
             </div>
         </section>
-        <section class="container my-5">
+        <section class="container my-5" id="Backpack">
             <h2>Backpack</h2>
             <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
                 <div class="col">
                     <div class="card border-0 shadow-lg h-100">
-                        <img src="images/bags/bag-1.png" class="card-img-top" alt="...">
+                        <img src="images/bags/bag-1.png" class="card-img-top" alt="">
                         <div class="card-body">
                             <h5 class="card-title">Res Laltu Bag</h5>
                             <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
@@ -231,7 +232,20 @@
                 </div>
             </div>
         </section>
+        <section style="height: 300px;" id="Subscribe"
+            class="container my-5 rounded-4 d-flex justify-content-center align-items-center bg-color-change ">
+            <div>
+                <h1>LET'S STAY IN TOUCH</h1>
+                <P>gets updates on sales, specials and more</P>
+                <input class="form-control" type="text" placeholder="Enter your email">
+                <br>
+                <button class="btn btn-warning">SUBMIT</button>
+            </div>
+        </section>
     </main>
+    <footer class="text-center">
+        <p><small>@ Panda Commerce .All right reserve .Sufia Bulgaria</small></p>
+    </footer>
 
     <!-- bootstrap script -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
